@@ -5,7 +5,7 @@
 ៚TOR Browser hacking toolkit designed specifically to combat illegal child exploitation websites. !!! TORhunter is for EDUCATIONAL PURPOSES ONLY and should NEVER BE USED ILLEGALLY!!!
 
 ## WARNING:
-៚This tool is NOT made for Termux users and it's not beginner-friendy. The code is the only one uncompyled due to the code modification to make it work. Once installed, inspect the code with "nano TORhunter" and replace the marked fields. Thanks for the attention. 
+៚This tool is NOT made for Termux users, requires root privileges and it's not beginner-friendy. The code is the only one uncompyled due to the code modification to make it work. Once installed, inspect the code with "nano TORhunter" and replace the marked fields. Thanks for the attention. 
 
 ## About This Project
 ៚TORhunter is a project with the goal in stopping the spread of child exploitation through TOR Browser by finding, disabling and reporting child exploitation websites. The Concept works by proxying TOR through a localhost and then using an arsenal of the very same tools you've come to love, along with some super effective modded and original tools, against TOR websites. Every tool is automated and geared towards ease of use along with the project's specific purpose in mind. All attacks can be deployed in 7 key strokes or less. Automation designed so that anyone novice to pro can volunteer and make a difference. Don't let this tool set's easy of use fool you though, as you'll see from our YouTube channel, TORhunter takes out TOR sites in real world situations with ease. 
@@ -78,7 +78,7 @@ These should be the only things the installer downloads as Kali should have the 
 
 1. ៚Clone the repo
 ```sh
-sudo git clone https://github.com/MBHudson/Vigilante-Toolset.git
+sudo git clone https://github.com/Err0r-ICA/TORhunter
 ```
 2. ៚Change Directory
 ```sh
@@ -92,9 +92,9 @@ sudo chmod +x ./install.sh
 ```sh
 sudo ./install.sh
 ```
-5. ៚Run Vigilante-Toolset
+5. ៚Run TORhunter
 ```sh
-sudo ./Vigilante
+sudo ./TORhunter
 ```
 
 ### Connect with me:
