@@ -1,0 +1,183 @@
+#!/bin/bash
+# TORhunter
+# Written by: Err0r_HB ~ HackBoyz (2020) 
+# Do NOT copy, noooooob!
+
+sudo
+clear
+for i in {80..226} {226..80} ; do echo -en "\033[38;5;${i}mBrought to you by: Err0r_HB \e[0m" ; done ; echo
+sleep 3.4
+
+ function Vigilance_Recon
+{
+option=0
+until [ "$option" = "1" ]; do
+echo -e "\033[1;95m[\033[1;97m01\033[1;95m] \033[1;92mConnect to TOR/Proxy"
+echo -e "\033[1;95m[\033[1;97m02\033[1;95m] \033[1;92mDisconnect TOR/PROXY"
+echo -e "\033[1;95m[\033[1;97m03\033[1;95m] \033[1;92mNmap"
+echo -e "\033[1;95m[\033[1;97m04\033[1;95m] \033[1;92mFull Port Scan"
+echo -e "\033[1;95m[\033[1;97m05\033[1;95m] \033[1;92mCustom Port Scan"
+echo -e "\033[1;95m[\033[1;97m06\033[1;95m] \033[1;92mCustom Proxy"
+echo -e "\033[1;95m[\033[1;97m t\033[1;95m] \033[1;92mTarget Notes"
+echo -e "\033[1;95m[\033[1;97m b\033[1;95m] \033[1;92mMain Menu"
+echo ""
+echo -e -n "\033[1;92mroot\033[1;95m@\033[1;96mtorhunter\033[1;97m:~# "
+read option
+echo ""
+case $option in
+    1 ) sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/proxy.sh" &  ;;
+    2 ) sudo service tor stop ;;
+    3 ) sudo nmap 127.0.0.1 -PN ;;
+    4 ) sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/nmap.sh" &  ;; 
+    5 ) sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/cport.sh" &  ;;
+    6 ) sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/cproxy.sh" & ;;
+    t ) sudo terminator 2>/dev/null -e "sudo nano /home/YOUR_USER_NAME/TORhunter/targets.txt" &  ;;    
+    b ) main_menu ;;
+    * ) tput setf 4;echo "echo -n "root@torhunter:~#:"";tput setf 4; 
+esac
+done
+ }
+
+ 
+ function Vengeance_Exploit 
+{
+option=0
+until [ "$option" = "2" ]; do
+echo -e "\033[1;95m[\033[1;97m01\033[1;95m] \033[1;92mDatabase Exploit/Injection"
+echo -e "\033[1;95m[\033[1;97m02\033[1;95m] \033[1;92mXSS/Vulnerability Scan"
+echo -e "\033[1;95m[\033[1;97m03\033[1;95m] \033[1;92mFull Site Mapper"
+echo -e "\033[1;95m[\033[1;97m04\033[1;95m] \033[1;92mDirectory Scan"
+echo -e "\033[1;95m[\033[1;97m05\033[1;95m] \033[1;92mAutomated Password Cracking"
+echo -e "\033[1;95m[\033[1;97m06\033[1;95m] \033[1;92mDDoS (Xerxes)"
+echo -e "\033[1;95m[\033[1;97m07\033[1;95m] \033[1;92mDDoS (Xerxes x4 ) Port 8000"
+echo -e "\033[1;95m[\033[1;97m08\033[1;95m] \033[1;92mCustomized DDoS"
+echo -e "\033[1;95m[\033[1;97m t\033[1;95m] \033[1;92mTarget Notes"
+echo -e "\033[1;95m[\033[1;97m b\033[1;95m] \033[1;92mMain Menu"
+echo ""
+echo -e -n "\033[1;92mroot\033[1;95m@\033[1;96mtorhunter:\033[1;97m~# "
+read option
+echo ""
+case $option in
+    1 ) sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/sql.sh" &  ;;
+    2 ) sudo terminator 2>/dev/null -e "sudo nikto -host 127.0.0.1 -port 8000" &  ;;
+    3 ) sudo terminator 2>/dev/null -e "sudo uniscan -u http://127.0.0.1:8000 -qwedsrgj" &  ;;
+    4 ) sudo terminator 2>/dev/null -e "sudo uniscan -u http://127.0.0.1:8000 -q" &  ;;
+    5 ) sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/bruTOR.sh" &  ;;
+    6 ) etherape 2>/dev/nul | sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/ddos.sh" & ;;
+    7 ) etherape 2>/dev/nul | sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/ddosx4.sh" & ;;
+    8 ) etherape 2>/dev/nul | sudo terminator 2>/dev/null -e "sudo /home/YOUR_USER_NAME/TORhunter/cDDoS" &  ;;
+    t ) sudo terminator 2>/dev/null -e "sudo nano /home/YOUR_USER_NAME/TORhunter/targets.txt" &   ;;
+    b ) main_menu ;;
+    * ) tput setf 4;echo "echo -n "root@torhunter:~#:"";tput setf 4; 
+esac
+done
+ }
+
+clear
+function Verbose_Report
+{
+option=0
+until [ "$option" = "3" ]; do
+ echo -e "\033[1;95m[\033[1;97m01\033[1;95m] \033[1;92mGeolocate IP on a Map"
+ echo -e "\033[1;95m[\033[1;97m02\033[1;95m] \033[1;92mFile Uploader (Send Link in Email)"
+ echo -e "\033[1;95m[\033[1;97m03\033[1;95m] \033[1;92mAnonymous E-Mail"
+echo -e "\033[1;95m[\033[1;97m t\033[1;95m] \033[1;92mTarget Notes"
+ echo -e "\033[1;95m[\033[1;97m b\033[1;95m] \033[1;92mMain Menu"
+echo ""
+ echo -e -n "\033[1;92mroot\033[1;95m@\033[1;96mtorhunter\033[1;97m:~#: "
+ read option
+ echo ""
+ case $option in
+ 1 ) xdg-open 2>/dev/null https://iplocation.com/ ;;
+ 2 ) /home/YOUR_USER_NAME/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/start-tor-browser https://www.filedropper.com/ ;;
+ 3 ) /home/YOUR_USER_NAME/.local/share/torbrowser/tbb/x86_64/tor-browser_en-US/Browser/start-tor-browser https://protonirockerxow.onion/ --no-remote ;;
+ t ) terminator 2>/dev/null -e "sudo nano /home/YOUR_USER_NAME/TORhunter/targets.txt" &  ;;
+ secret ) sudo terminator 2>/dev/null -e "sudo nano /home/YOUR_USER_NAME/TORhunter/wordlists/passswords.txt" &  ;;
+ b ) main_menu ;;
+ * ) tput setf 3;echo "echo -n "root@torhunter:~#"";tput setf 3;
+ esac
+ done
+}
+
+function main_menu 
+{
+option=0
+until [ "$option" = "4" ]; do
+
+clear
+echo -e '''
+\e[1;91m      ╔═══════════╗
+\e[1;91m    ╔═╝\e[1;97m███████████\e[1;91m╚═╗
+\e[1;91m   ╔╝\e[1;97m███████████████\e[1;91m╚╗
+\e[1;91m   ║\e[1;97m██████\e[1;92mERR0R\e[1;97m██████\e[1;91m║
+\e[1;91m   ║\e[1;97m█████████████████\e[1;91m║\e[1;91m
+\e[1;91m   ║\e[1;97m█████████████████\e[1;91m║\e[1;91m
+\e[1;91m   ║\e[1;97m█\e[1;91m╔\e[1;97m█████████████\e[1;91m╗\e[1;97m█\e[1;91m║\e[1;91m
+\e[1;91m   ╚╦╝\e[1;97m███\e[1;90m▒▒\e[1;97m███\e[1;90m▒▒\e[1;97m███\e[1;91m╚╦╝\e[1;91m
+\e[1;91m   ╔╝\e[1;97m██\e[1;90m▒▒▒▒\e[1;97m███\e[1;90m▒▒▒▒\e[1;97m██\e[1;91m╚╗\e[1;91m
+\e[1;91m   ║\e[1;97m██\e[1;90m▒▒▒▒▒\e[1;97m███\e[1;90m▒▒▒▒▒\e[1;97m██\e[1;91m|\e[1;91m
+\e[1;91m   ║\e[1;97m██\e[1;90m▒▒▒▒\e[1;97m█████\e[1;90m▒▒▒▒\e[1;97m██\e[1;91m║\e[1;94m
+\e[1;91m   ╚╗\e[1;97m███████████████\e[1;91m╔╝\e[1;94m
+\e[1;91m  ╔═╬══╦╝\e[1;97m██\e[1;90m▒\e[1;97m█\e[1;90m▒\e[1;97m██\e[1;91m╚╦══╝\e[1;90m .▒..
+\e[1;91m  ║\e[1;97m█\e[1;91m║══║\e[1;97m█████████\e[1;91m║\e[1;90m ...▒.       \e[1;93m
+\e[1;91m  ║\e[1;97m█\e[1;91m║══║\e[1;97m█\e[1;91m║\e[1;97m██\e[1;91m║\e[1;97m██\e[1;91m║\e[1;97m█\e[1;91m║\e[1;90m　.▒..
+\e[1;91m  ║\e[1;97m█\e[1;91m║══╚═╩══╩╦═╩═╩═╦╗\e[1;90m▒.
+\e[1;91m ╔╝\e[1;97m█\e[1;91m╚══╦═╦══╦╩═╦═╦═╩╝  \e[38;5;48m
+\e[1;91m╔╝\e[1;97m█████\e[1;91m║\e[1;97m█\e[1;91m║\e[1;97m██\e[1;91m║\e[1;97m██\e[1;91m║\e[1;97m█\e[1;91m║
+\e[1;91m║\e[1;97m██████\e[1;91m║\e[1;97m█████████\e[1;91m║
+'''
+sleep 1.2
+echo -e '''
+\033[38;5;56m████████\033[38;5;199m╗\033[38;5;56m ██████\033[38;5;199m╗ \033[38;5;56m██████\033[38;5;199m╗ \033[38;5;56m██\033[38;5;199m╗  \033[38;5;56m██\033[38;5;199m╗\033[38;5;56m██\033[38;5;199m╗   \033[38;5;56m██\033[38;5;199m╗\033[38;5;56m███\033[38;5;199m╗   \033[38;5;56m██\033[38;5;199m╗\033[38;5;56m████████\033[38;5;199m╗\033[38;5;56m███████\033[38;5;199m╗\033[38;5;56m██████\033[38;5;199m╗
+\033[38;5;56m\033[38;5;199m╚══\033[38;5;56m██\033[38;5;199m╔══╝\033[38;5;56m██\033[38;5;199m╔═══\033[38;5;56m██\033[38;5;199m╗\033[38;5;56m██\033[38;5;199m╔══\033[38;5;56m██\033[38;5;199m╗\033[38;5;56m██\033[38;5;199m║  \033[38;5;56m██\033[38;5;199m║\033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║\033[38;5;56m████\033[38;5;199m╗  \033[38;5;56m██\033[38;5;199m║╚══\033[38;5;56m██\033[38;5;199m╔══╝\033[38;5;56m██\033[38;5;199m╔════╝\033[38;5;56m██\033[38;5;199m╔══\033[38;5;56m██\033[38;5;199m╗
+\033[38;5;56m   ██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║\033[38;5;56m██████\033[38;5;199m╔╝\033[38;5;56m███████\033[38;5;199m║\033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║\033[38;5;56m██\033[38;5;199m╔\033[38;5;56m██\033[38;5;199m╗ \033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║   \033[38;5;56m█████\033[38;5;199m╗  \033[38;5;56m██████\033[38;5;199m╔╝
+\033[38;5;56m   ██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║\033[38;5;56m██\033[38;5;199m╔══\033[38;5;56m██\033[38;5;199m╗\033[38;5;56m██\033[38;5;199m╔══\033[38;5;56m██\033[38;5;199m║\033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║\033[38;5;56m██\033[38;5;199m║╚\033[38;5;56m██╗\033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m╔══╝  \033[38;5;56m██\033[38;5;199m╔══\033[38;5;56m██\033[38;5;199m╗
+\033[38;5;56m   ██\033[38;5;199m║   ╚\033[38;5;56m██████\033[38;5;199m╔╝\033[38;5;56m██\033[38;5;199m║  \033[38;5;56m██\033[38;5;199m║\033[38;5;56m██\033[38;5;199m║  \033[38;5;56m██\033[38;5;199m║╚\033[38;5;56m██████\033[38;5;199m╔╝\033[38;5;56m██\033[38;5;199m║ ╚\033[38;5;56m████\033[38;5;199m║   \033[38;5;56m██\033[38;5;199m║   \033[38;5;56m███████\033[38;5;199m╗\033[38;5;56m██\033[38;5;199m║  \033[38;5;56m██\033[38;5;199m║
+\033[38;5;199m   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   ╚══════╝╚═╝  ╚═╝
+'''
+sleep 1
+echo -e """
+\e[38;5;197m ꧁෴╔══════════════════❖•ೋ°៚°ೋ•❖══════════════════╗෴꧂
+\e[1;91m    ➣Name       ⇶   TORhunter
+\e[1;92m    ➣Author     →   *ERR0R_HB*
+\e[1;93m    ➣Github     ⇶   https://github.com/Err0r-ICA
+\e[1;94m    ➣Instagram  →   t.me/termuxxhacking
+\e[1;96m    ➣Telegram   ⇶   @termux_hacking
+\e[1;95m    ➣Team       →   ~HACKBOYZ~
+\e[1;94m    ➣Twitter    ⇶   twitter.com/HHackboyz
+\e[38;5;197m ꧁෴╚══════════════════❖•ೋ°៚°ೋ•❖══════════════════╝෴꧂
+\e[1;93m               *Press 'CTRL + Z' to exit*
+
+                    \033[1;92m████\033[1;97m████\033[1;91m████
+                    \033[1;92m████\033[1;97m████\033[1;91m████
+                    \033[1;92m████\033[1;97m████\033[1;91m████
+                    \033[1;92m████\033[1;97m████\033[1;91m████
+"""
+sleep 1.5
+echo -e "   \033[1;91m@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@"
+echo -e "   \033[1;91m§\033[1;93mThis software is for educational purposes ONLY \033[1;91m§\n\033[1;91m   §\033[1;93mAnd NOT6 meant to be used illegally in any way!\033[1;91m§"
+ echo -e "   \033[1;91m#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#"
+echo ""
+echo ""
+ echo -e "\033[1;95m[\033[1;97m01\033[1;95m] \033[1;92mVigilance/Recon"
+echo -e "\033[1;95m[\033[1;97m02\033[1;95m] \033[1;92mVengeance/Exploit"
+echo -e "\033[1;95m[\033[1;97m03\033[1;95m] \033[1;92mVerbose/Report"
+echo ""
+ echo -e "\033[1;95m[\033[1;97m g\033[1;95m] \033[1;97m\033[1;101mQuit\033[0m"
+echo ""
+ echo -e "\033[1;93mType option or help and press \033[1;92mENTER"
+echo ""
+ echo -e -n "\e[38;5;47mroot@\e[38;5;197mtorhunter:~# "
+read option
+echo ""
+case $option in
+    1 ) Vigilance_Recon ;  ;;
+    2 ) Vengeance_Exploit ;  ;;
+    3 ) Verbose_Report ;  ;;
+    help ) xdg-open 2>/dev/null https://github.com/Err0r-ICA#usage ;;
+    q ) exit ;;
+    * ) tput setf 4;echo -n "root@torhunter:~#: ";tput setf 4;
+esac
+done
+ }
+main_menu
