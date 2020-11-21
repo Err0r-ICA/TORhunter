@@ -82,7 +82,7 @@ sudo git clone https://github.com/Err0r-ICA/TORhunter
 ```
 2. ៚Change Directory
 ```sh
-cd Vigilante-Toolset
+cd TORhunter
 ```
 3. ៚Give Permissions
 ```sh
