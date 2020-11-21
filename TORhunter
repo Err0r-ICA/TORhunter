@@ -155,7 +155,7 @@ echo -e """
 """
 sleep 1.5
 echo -e "   \033[1;91m@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@"
-echo -e "   \033[1;91m§\033[1;93mThis software is for educational purposes ONLY \033[1;91m§\n\033[1;91m   §\033[1;93mAnd NOT6 meant to be used illegally in any way!\033[1;91m§"
+echo -e "   \033[1;91m§\033[1;93mThis software is for educational purposes ONLY \033[1;91m§\n\033[1;91m   §\033[1;93mAnd NOT meant to be used illegally in any way! \033[1;91m§"
  echo -e "   \033[1;91m#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#@#"
 echo ""
 echo ""
