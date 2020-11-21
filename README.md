@@ -2,7 +2,7 @@
 #### <i>**The Nightmare of TOR Browser**</i>
 ៚Designed to scan and exploit vulnerabilities within Tor hidden services. TORhunter allows most tools to work as normal while resolving .onion
 
-៚TOR Browser hacking toolkit designed specifically to combat illegal child exploitation websites. !!!Vigilante-Toolset is for EDUCATIONAL PURPOSES ONLY and should NEVER BE USED ILLEGALLY!!!
+៚TOR Browser hacking toolkit designed specifically to combat illegal child exploitation websites. !!! TORhunter is for EDUCATIONAL PURPOSES ONLY and should NEVER BE USED ILLEGALLY!!!
 
 ## WARNING:
 ៚This tool is NOT made for Termux users and it's not beginner-friendy. The code is the only one uncompyled due to the code modification to make it work. Once installed, inspect the code with "nano TORhunter" and replace the marked fields. Thanks for the attention. 
