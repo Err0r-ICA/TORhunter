@@ -2,13 +2,15 @@
 #### <i>**The Nightmare of TOR Browser**</i>
 ៚Designed to scan and exploit vulnerabilities within Tor hidden services. TORhunter allows most tools to work as normal while resolving .onion
 
-TOR Browser hacking toolkit designed specifically to combat illegal child exploitation websites. !!!Vigilante-Toolset is for EDUCATIONAL PURPOSES ONLY and should NEVER BE USED ILLEGALLY!!!
+៚TOR Browser hacking toolkit designed specifically to combat illegal child exploitation websites. !!!Vigilante-Toolset is for EDUCATIONAL PURPOSES ONLY and should NEVER BE USED ILLEGALLY!!!
 
 ## WARNING:
-This tool is NOT made for Termux users and it's not beginner-friendy. The code is the only one uncompyled due to the code modification to make it work. Once installed, inspect the code with "nano TORhunter" and replace the marked fields. Thanks for the attention. 
+៚This tool is NOT made for Termux users and it's not beginner-friendy. The code is the only one uncompyled due to the code modification to make it work. Once installed, inspect the code with "nano TORhunter" and replace the marked fields. Thanks for the attention. 
 
 ## About This Project
-TORhunter is a project with the goal in stopping the spread of child exploitation through TOR Browser by finding, disabling and reporting child exploitation websites. The Concept works by proxying TOR through a localhost and then using an arsenal of the very same tools you've come to love, along with some super effective modded and original tools, against TOR websites. Every tool is automated and geared towards ease of use along with the project's specific purpose in mind. All attacks can be deployed in 7 key strokes or less. Automation designed so that anyone novice to pro can volunteer and make a difference. Don't let this tool set's easy of use fool you though, as you'll see from our YouTube channel, TORhunter takes out TOR sites in real world situations with ease. 
+៚TORhunter is a project with the goal in stopping the spread of child exploitation through TOR Browser by finding, disabling and reporting child exploitation websites. The Concept works by proxying TOR through a localhost and then using an arsenal of the very same tools you've come to love, along with some super effective modded and original tools, against TOR websites. Every tool is automated and geared towards ease of use along with the project's specific purpose in mind. All attacks can be deployed in 7 key strokes or less. Automation designed so that anyone novice to pro can volunteer and make a difference. Don't let this tool set's easy of use fool you though, as you'll see from our YouTube channel, TORhunter takes out TOR sites in real world situations with ease. 
+
+![Screenshot](https://i.postimg.cc/sxzDwL2N/20201121-200541.jpg)
 
 **Tools Include** <i>(more coming soon)</i>
 
@@ -73,23 +75,23 @@ These should be the only things the installer downloads as Kali should have the 
 
 ## Installation
 
-1. Clone the repo
+1. ៚Clone the repo
 ```sh
 sudo git clone https://github.com/MBHudson/Vigilante-Toolset.git
 ```
-2. Change Directory
+2. ៚Change Directory
 ```sh
 cd Vigilante-Toolset
 ```
-3. Give Permissions
+3. ៚Give Permissions
 ```sh
 sudo chmod +x ./install.sh
 ```
-4. Run Installer
+4. ៚Run Installer
 ```sh
 sudo ./install.sh
 ```
-5. Run Vigilante-Toolset
+5. ៚Run Vigilante-Toolset
 ```sh
 sudo ./Vigilante
 ```
